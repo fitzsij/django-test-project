@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>My Packages</h1>
+{% if packages %}
+	<ul>
+		{% for pkg in packages %}
+			<li><a href="/pri/{{ pkg.id }}/">{{ pkg }}</a></li>
+				{% endfor %}
+					</ul>
+				{% else %}
+			<p>No packages are available.</p>
+		{% endif %} 
+</body>
+</html>
